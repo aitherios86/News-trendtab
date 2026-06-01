@@ -1,0 +1,58 @@
+// reset 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-area{
+    flex: 1;
+    margin-right: 30px;
+}
+
+// sidebar 
+.trending-sidebar{
+    width: 350px;
+    background-color: #f7f9fa;
+    border-radius: 16px;
+    padding: 15px;
+    
+    h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+// individual injected items 
+.trend-item{
+    padding: 12px 0;
+    border-bottom: 1px solid #e1e8ed;
+
+    &:last-child{
+        border-bottom: none;
+    }
+
+    .cat{
+        font-size: 13px;
+        color: #536471;
+        display: block;
+    }
+    .top{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 4px 0;
+    }
+    .cnt{
+        font-size: 13px;
+        color: #536471;
+        display: block;
+    }
+}
